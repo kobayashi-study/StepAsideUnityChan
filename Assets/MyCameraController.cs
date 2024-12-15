@@ -19,19 +19,19 @@ public class MyCameraController : MonoBehaviour
         this.transform.position = new Vector3(0, this.transform.position.y, this.unitychan.transform.position.z-difference);
         
         GameObject coin = GameObject.FindGameObjectWithTag("CoinTag");
-        if (this.transform.position.z > coin.transform.position.z)
+        if (coin != null && this.transform.position.z > coin.transform.position.z)
         {
             Destroy(coin);
         }
 
         GameObject car = GameObject.FindGameObjectWithTag("CarTag");
-        if (this.transform.position.z > car.transform.position.z)
+        if (car != null && this.transform.position.z > car.transform.position.z)
         {
             Destroy(car);
         }
 
         GameObject cone = GameObject.FindGameObjectWithTag("TrafficConeTag");
-        if (this.transform.position.z > cone.transform.position.z)
+        if (cone != null && this.transform.position.z > cone.transform.position.z)
         {
             Destroy(cone);
         }

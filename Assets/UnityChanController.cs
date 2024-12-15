@@ -61,7 +61,6 @@ public class UnityChanController : MonoBehaviour
         if (this.myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Jump")) {
             this.myAnimator.SetBool("Jump", false);
         }
-
         this.myRigidbody.velocity = new Vector3(inputVelocityX, inputVelocityY, this.velocityZ);
     }
 
