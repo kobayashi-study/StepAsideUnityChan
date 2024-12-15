@@ -24,6 +24,7 @@ public class ItemGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //«lesson6@”­“W‰Û‘è
         float i = unityChan.transform.position.z + 60f;
         if (i >= startPos && i < goalPos) {
             if (i >= generatePosZ + interval) {

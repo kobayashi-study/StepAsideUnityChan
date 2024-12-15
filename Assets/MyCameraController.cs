@@ -17,7 +17,7 @@ public class MyCameraController : MonoBehaviour
     void Update()
     {
         this.transform.position = new Vector3(0, this.transform.position.y, this.unitychan.transform.position.z-difference);
-        
+        //«lesson6@‰Û‘è
         GameObject coin = GameObject.FindGameObjectWithTag("CoinTag");
         if (coin != null && this.transform.position.z > coin.transform.position.z)
         {
